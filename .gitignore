@@ -1,0 +1,11 @@
+*.py[cod]
+
+# Git repo containing network devices lists.
+/routerslists
+
+# Git repo containing the debug file with DNS zones
+# dumps, overrides file and allocations file.
+/dnsautogen
+
+# SonarQube sonar-scanner working directory.
+/.scannerwork

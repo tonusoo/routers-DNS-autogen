@@ -1,0 +1,6 @@
+[FORMAT]
+max-line-length=79
+
+[LOGGING]
+# https://github.com/PyCQA/pylint/issues/2354
+disable=logging-fstring-interpolation

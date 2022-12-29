@@ -1,0 +1,3 @@
+[flake8]
+# https://pep8.org/#maximum-line-length
+max-doc-length = 72

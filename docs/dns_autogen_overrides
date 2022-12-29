@@ -1,0 +1,17 @@
+#
+# Manual overrides for routers_dns_autogen.py script.
+#
+# Three kind of entries are supported:
+#
+# <name>    <IPv4 addr>    <optional DNS TTL for this record>
+# <name>    <IPv6 addr>    <optional DNS TTL for this record>
+# <name>    <CNAME>        <optional router IPv4 addr>        <optional DNS TTL for this record>
+
+EE-Tll-Lab-r1   EE-Tll-Lab-r1-fxp0-0            10.5.5.58
+EE-Tll-Lab-r2   EE-Tll-Lab-r2-gi1               10.5.5.57
+FI-Hel-DC1-r7   FI-Hel-DC1-r7-gi1               10.5.5.60
+
+cpe-a           172.16.0.33
+cpe-b           172.16.0.65
+
+test.core       fdd5:3dec:c790:99::844		    1800

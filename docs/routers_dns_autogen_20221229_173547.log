@@ -1,0 +1,171 @@
+17:35:47 EET 29-12-2022 - INFO - routers_dns_autogen.py is executed by user "usr" in "nms-svr" server
+17:35:47 EET 29-12-2022 - INFO - Processing the conf file named /home/usr/routers-DNS-autogen/conf.ini
+17:35:47 EET 29-12-2022 - INFO - Read the DNS related options
+17:35:47 EET 29-12-2022 - INFO - Read the RIPE related options
+17:35:47 EET 29-12-2022 - INFO - "api_keys" configuration option under "ripe" section in "/home/usr/routers-DNS-autogen/conf.ini" is missing
+17:35:47 EET 29-12-2022 - INFO - Read the Junipers related options
+17:35:47 EET 29-12-2022 - INFO - Read the Ciscos related options
+17:35:47 EET 29-12-2022 - INFO - Read the Git related options
+17:35:47 EET 29-12-2022 - INFO - "repos_dir" configuration option under "git" section in "/home/usr/routers-DNS-autogen/conf.ini" is missing.
+17:35:47 EET 29-12-2022 - INFO - git fetch for "/home/usr/routers-DNS-autogen/routerslists"
+17:35:47 EET 29-12-2022 - INFO - git merge for "/home/usr/routers-DNS-autogen/routerslists"
+17:35:47 EET 29-12-2022 - INFO - git fetch for "/home/usr/routers-DNS-autogen/dnsautogen"
+17:35:47 EET 29-12-2022 - INFO - git merge for "/home/usr/routers-DNS-autogen/dnsautogen"
+17:35:47 EET 29-12-2022 - INFO - Read in the manual overrides from "/home/usr/routers-DNS-autogen/dnsautogen/dns_autogen_overrides" file
+17:35:47 EET 29-12-2022 - INFO - Processing Juniper routers
+17:35:50 EET 29-12-2022 - INFO - Established NETCONF session to EE-Tll-Lab-r1 using address 10.5.5.58
+17:35:50 EET 29-12-2022 - DEBUG - Found 172.16.0.32/31 on ge-0/0/3.0
+17:35:50 EET 29-12-2022 - DEBUG - Found 172.16.0.1/28 on ge-0/0/4.0
+17:35:50 EET 29-12-2022 - DEBUG - Found 192.168.51.252/24 on ge-0/0/7.122
+17:35:50 EET 29-12-2022 - DEBUG - Found fdd5:3dec:c790:63::2/64 on ge-0/0/7.122
+17:35:50 EET 29-12-2022 - DEBUG - Found 192.168.114.221/29 on ge-0/0/7.123
+17:35:50 EET 29-12-2022 - DEBUG - Found fdd5:3dec:c790:88::1/64 on ge-0/0/7.123
+17:35:50 EET 29-12-2022 - DEBUG - Found 192.168.115.0/31 on ge-0/0/7.124
+17:35:50 EET 29-12-2022 - DEBUG - Found fdd5:3dec:c790:100::/127 on ge-0/0/7.124
+17:35:50 EET 29-12-2022 - DEBUG - Found 10.0.0.4/8 on em1.0
+17:35:50 EET 29-12-2022 - DEBUG - Found 128.0.0.1/2 on em1.0
+17:35:50 EET 29-12-2022 - DEBUG - Found 128.0.0.4/2 on em1.0
+17:35:50 EET 29-12-2022 - DEBUG - Found fec0::a:0:0:4/64 on em1.0
+17:35:50 EET 29-12-2022 - DEBUG - Found 10.5.5.58/24 on fxp0.0
+17:35:50 EET 29-12-2022 - DEBUG - Found 128.0.0.127/2 on jsrv.1
+17:35:50 EET 29-12-2022 - DEBUG - Found VRRP VIP fdd5:3dec:c790:63::1 on ge-0/0/7.122
+17:35:50 EET 29-12-2022 - DEBUG - Found BGP neigh address 192.168.114.222 (ASN 65001)
+17:35:50 EET 29-12-2022 - DEBUG - Found BGP neigh address fdd5:3dec:c790:88::fde9 (ASN 65001)
+17:35:50 EET 29-12-2022 - DEBUG - Found BGP neigh address 192.168.115.1 (ASN 65007)
+17:35:50 EET 29-12-2022 - DEBUG - Found BGP neigh address fdd5:3dec:c790:100::1 (ASN 65007)
+17:35:50 EET 29-12-2022 - INFO - Processing Cisco routers
+17:35:50 EET 29-12-2022 - INFO - Established SNMP session to FI-Hel-DC1-r7 using address 10.5.5.60
+17:35:50 EET 29-12-2022 - DEBUG - Found VRRP VIP 172.16.2.134 on GigabitEthernet6
+17:35:50 EET 29-12-2022 - DEBUG - Found 172.16.0.64/31 on GigabitEthernet3
+17:35:50 EET 29-12-2022 - DEBUG - Found 10.5.5.60/24 on GigabitEthernet1
+17:35:50 EET 29-12-2022 - DEBUG - Found VRRP VIP 172.16.2.133 on GigabitEthernet6
+17:35:50 EET 29-12-2022 - DEBUG - Found 172.16.2.9/30 on GigabitEthernet5
+17:35:50 EET 29-12-2022 - DEBUG - Found 172.16.0.14/28 on GigabitEthernet4
+17:35:50 EET 29-12-2022 - INFO - Established SNMP session to EE-Tll-Lab-r2 using address 10.5.5.57
+17:35:50 EET 29-12-2022 - DEBUG - Found 192.168.51.253/24 on GigabitEthernet7.122
+17:35:50 EET 29-12-2022 - DEBUG - Found 10.5.5.57/24 on GigabitEthernet1
+17:35:50 EET 29-12-2022 - DEBUG - Found 192.168.115.1/31 on GigabitEthernet7.124
+17:35:50 EET 29-12-2022 - DEBUG - Found VRRP VIP 192.168.51.254 on GigabitEthernet7.122
+17:35:50 EET 29-12-2022 - DEBUG - Found 172.16.2.10/30 on GigabitEthernet5
+17:35:50 EET 29-12-2022 - DEBUG - Found 192.168.114.241/30 on GigabitEthernet7.123
+17:35:50 EET 29-12-2022 - DEBUG - Found fdd5:3dec:c790:63::3/64 on GigabitEthernet7.122
+17:35:50 EET 29-12-2022 - DEBUG - Found fdd5:3dec:c790:99::112/127 on GigabitEthernet7.123
+17:35:50 EET 29-12-2022 - DEBUG - Found fdd5:3dec:c790:100::1/127 on GigabitEthernet7.124
+17:35:50 EET 29-12-2022 - DEBUG - Found BGP neigh address 192.168.115.0 (ASN 65000)
+17:35:50 EET 29-12-2022 - DEBUG - Found BGP neigh address 192.168.114.242 (ASN 4294967294)
+17:35:50 EET 29-12-2022 - DEBUG - Found BGP neigh address fdd5:3dec:c790:99::113 (ASN 65005)
+17:35:50 EET 29-12-2022 - DEBUG - Found BGP neigh address fdd5:3dec:c790:100:: (ASN 65000)
+17:35:50 EET 29-12-2022 - DEBUG - Ignore 10.0.0.4 found in EE-Tll-Lab-r1 because the em1.0 interface is ignored
+17:35:50 EET 29-12-2022 - DEBUG - Ignore 128.0.0.1 found in EE-Tll-Lab-r1 because the em1.0 interface is ignored
+17:35:50 EET 29-12-2022 - DEBUG - Ignore 128.0.0.4 found in EE-Tll-Lab-r1 because the em1.0 interface is ignored
+17:35:50 EET 29-12-2022 - DEBUG - Ignore fec0::a:0:0:4 found in EE-Tll-Lab-r1 because the em1.0 interface is ignored
+17:35:50 EET 29-12-2022 - DEBUG - Ignore 128.0.0.127 found in EE-Tll-Lab-r1 because the jsrv.1 interface is ignored
+17:35:50 EET 29-12-2022 - DEBUG - Ignore BGP neigh addr 192.168.115.0 found in EE-Tll-Lab-r2 because the same addr was found on EE-Tll-Lab-r1 int ge-0/0/7.124
+17:35:50 EET 29-12-2022 - DEBUG - Ignore BGP neigh addr fdd5:3dec:c790:100:: found in EE-Tll-Lab-r2 because the same addr was found on EE-Tll-Lab-r1 int ge-0/0/7.124
+17:35:50 EET 29-12-2022 - DEBUG - Ignore BGP neigh addr 192.168.115.1 found in EE-Tll-Lab-r1 because the same addr was found on EE-Tll-Lab-r2 int GigabitEthernet7.124
+17:35:50 EET 29-12-2022 - DEBUG - Ignore BGP neigh addr fdd5:3dec:c790:100::1 found in EE-Tll-Lab-r1 because the same addr was found on EE-Tll-Lab-r2 int GigabitEthernet7.124
+17:35:50 EET 29-12-2022 - DEBUG - Ignore 172.16.0.14 found in FI-Hel-DC1-r7 because the 172.16.0.8/29 is delegated to customer
+17:35:50 EET 29-12-2022 - INFO - Convert the interface names suitable for DNS
+17:35:50 EET 29-12-2022 - INFO - RIPE API keys were not configured. Discovered networks are not checked against the allocations in RIPE database
+17:35:50 EET 29-12-2022 - INFO - Overwrite automatically gathered info with manual entries
+17:35:50 EET 29-12-2022 - INFO - Added alias EE-Tll-Lab-r1 pointing to EE-Tll-Lab-r1-fxp0-0 from the overrides file
+17:35:50 EET 29-12-2022 - INFO - Added alias EE-Tll-Lab-r2 pointing to EE-Tll-Lab-r2-gi1 from the overrides file
+17:35:50 EET 29-12-2022 - INFO - Added alias FI-Hel-DC1-r7 pointing to FI-Hel-DC1-r7-gi1 from the overrides file
+17:35:50 EET 29-12-2022 - INFO - Added IP addr 172.16.0.33 (cpe-a) from the overrides file
+17:35:50 EET 29-12-2022 - INFO - Added IP addr 172.16.0.65 (cpe-b) from the overrides file
+17:35:50 EET 29-12-2022 - INFO - Added IP addr fdd5:3dec:c790:99::844 (test.core) from the overrides file
+17:35:50 EET 29-12-2022 - INFO - Write discovered DNS entries to "/home/usr/routers-DNS-autogen/dnsautogen/routers_dns_autogen.debug"
+17:35:50 EET 29-12-2022 - INFO - git add for "routers_dns_autogen.debug" in repo "/home/usr/routers-DNS-autogen/dnsautogen"
+17:35:50 EET 29-12-2022 - INFO - git commit for "routers_dns_autogen.debug" in repo "/home/usr/routers-DNS-autogen/dnsautogen"
+17:35:50 EET 29-12-2022 - INFO - git push for "/home/usr/routers-DNS-autogen/dnsautogen"
+17:35:51 EET 29-12-2022 - DEBUG - AXFR query of the example.net. zone from DNS server 10.5.5.159 succeeded
+17:35:51 EET 29-12-2022 - DEBUG - Received existing record: "cpe-a" "28800" "IN" "A" "172.16.0.33"
+17:35:51 EET 29-12-2022 - DEBUG - Received existing record: "cpe-b" "28800" "IN" "A" "172.16.0.65"
+17:35:51 EET 29-12-2022 - DEBUG - Received existing record: "EE-Tll-Lab-r1" "28800" "IN" "CNAME" "EE-Tll-Lab-r1-fxp0-0"
+17:35:51 EET 29-12-2022 - DEBUG - Received existing record: "EE-Tll-Lab-r1-fxp0-0" "28800" "IN" "A" "10.5.5.58"
+17:35:51 EET 29-12-2022 - DEBUG - Received existing record: "EE-Tll-Lab-r1-ge-0-0-3-0" "28800" "IN" "A" "172.16.0.32"
+17:35:51 EET 29-12-2022 - DEBUG - Received existing record: "EE-Tll-Lab-r1-ge-0-0-4-0" "28800" "IN" "A" "172.16.0.1"
+17:35:51 EET 29-12-2022 - DEBUG - Received existing record: "EE-Tll-Lab-r1-ge-0-0-6-0" "28800" "IN" "A" "172.16.2.1"
+17:35:51 EET 29-12-2022 - DEBUG - Received existing record: "EE-Tll-Lab-r1-ge-0-0-7-122" "28800" "IN" "A" "192.168.51.252"
+17:35:51 EET 29-12-2022 - DEBUG - Received existing record: "EE-Tll-Lab-r1-ge-0-0-7-122" "28800" "IN" "AAAA" "fdd5:3dec:c790:63::2"
+17:35:51 EET 29-12-2022 - DEBUG - Received existing record: "vrrp.inet6.EE-Tll-Lab-r1-ge-0-0-7-122" "28800" "IN" "AAAA" "fdd5:3dec:c790:63::1"
+17:35:51 EET 29-12-2022 - DEBUG - Received existing record: "EE-Tll-Lab-r1-ge-0-0-7-123" "28800" "IN" "A" "192.168.114.221"
+17:35:51 EET 29-12-2022 - DEBUG - Received existing record: "EE-Tll-Lab-r1-ge-0-0-7-123" "28800" "IN" "AAAA" "fdd5:3dec:c790:88::1"
+17:35:51 EET 29-12-2022 - DEBUG - Received existing record: "as65001.inet.EE-Tll-Lab-r1-ge-0-0-7-123" "28800" "IN" "A" "192.168.114.222"
+17:35:51 EET 29-12-2022 - DEBUG - Received existing record: "as65001.inet6.EE-Tll-Lab-r1-ge-0-0-7-123" "28800" "IN" "AAAA" "fdd5:3dec:c790:88::fde9"
+17:35:51 EET 29-12-2022 - DEBUG - Received existing record: "EE-Tll-Lab-r1-ge-0-0-7-124" "28800" "IN" "A" "192.168.115.0"
+17:35:51 EET 29-12-2022 - DEBUG - Received existing record: "EE-Tll-Lab-r1-ge-0-0-7-124" "28800" "IN" "AAAA" "fdd5:3dec:c790:100::"
+17:35:51 EET 29-12-2022 - DEBUG - Received existing record: "EE-Tll-Lab-r2" "28800" "IN" "CNAME" "EE-Tll-Lab-r2-gi1"
+17:35:51 EET 29-12-2022 - DEBUG - Received existing record: "EE-Tll-Lab-r2-gi1" "28800" "IN" "A" "10.5.5.57"
+17:35:51 EET 29-12-2022 - DEBUG - Received existing record: "EE-Tll-Lab-r2-gi5" "28800" "IN" "A" "172.16.2.10"
+17:35:51 EET 29-12-2022 - DEBUG - Received existing record: "EE-Tll-Lab-r2-gi7-122" "28800" "IN" "A" "192.168.51.253"
+17:35:51 EET 29-12-2022 - DEBUG - Received existing record: "EE-Tll-Lab-r2-gi7-122" "28800" "IN" "AAAA" "fdd5:3dec:c790:63::3"
+17:35:51 EET 29-12-2022 - DEBUG - Received existing record: "vrrp.inet.EE-Tll-Lab-r2-gi7-122" "28800" "IN" "A" "192.168.51.254"
+17:35:51 EET 29-12-2022 - DEBUG - Received existing record: "EE-Tll-Lab-r2-gi7-123" "28800" "IN" "A" "192.168.114.241"
+17:35:51 EET 29-12-2022 - DEBUG - Received existing record: "EE-Tll-Lab-r2-gi7-123" "28800" "IN" "AAAA" "fdd5:3dec:c790:99::112"
+17:35:51 EET 29-12-2022 - DEBUG - Received existing record: "as4294967294.inet.EE-Tll-Lab-r2-gi7-123" "28800" "IN" "A" "192.168.114.242"
+17:35:51 EET 29-12-2022 - DEBUG - Received existing record: "as65005.inet6.EE-Tll-Lab-r2-gi7-123" "28800" "IN" "AAAA" "fdd5:3dec:c790:99::113"
+17:35:51 EET 29-12-2022 - DEBUG - Received existing record: "EE-Tll-Lab-r2-gi7-124" "28800" "IN" "A" "192.168.115.1"
+17:35:51 EET 29-12-2022 - DEBUG - Received existing record: "EE-Tll-Lab-r2-gi7-124" "28800" "IN" "AAAA" "fdd5:3dec:c790:100::1"
+17:35:51 EET 29-12-2022 - DEBUG - Received existing record: "FI-Hel-DC1-r7" "28800" "IN" "CNAME" "FI-Hel-DC1-r7-gi1"
+17:35:51 EET 29-12-2022 - DEBUG - Received existing record: "FI-Hel-DC1-r7-gi1" "28800" "IN" "A" "10.5.5.60"
+17:35:51 EET 29-12-2022 - DEBUG - Received existing record: "FI-Hel-DC1-r7-gi3" "28800" "IN" "A" "172.16.0.64"
+17:35:51 EET 29-12-2022 - DEBUG - Received existing record: "FI-Hel-DC1-r7-gi5" "28800" "IN" "A" "172.16.2.9"
+17:35:51 EET 29-12-2022 - DEBUG - Received existing record: "vrrp.inet.FI-Hel-DC1-r7-gi6" "28800" "IN" "A" "172.16.2.133"
+17:35:51 EET 29-12-2022 - DEBUG - Received existing record: "vrrp.inet.FI-Hel-DC1-r7-gi6" "28800" "IN" "A" "172.16.2.134"
+17:35:51 EET 29-12-2022 - DEBUG - AXFR query of the 0.16.172.in-addr.arpa. zone from DNS server 10.5.5.159 succeeded
+17:35:51 EET 29-12-2022 - DEBUG - Received existing record: "1.0.16.172.in-addr.arpa." "28800" "IN" "PTR" "EE-Tll-Lab-r1-ge-0-0-4-0.example.net."
+17:35:51 EET 29-12-2022 - DEBUG - Received existing record: "32.0.16.172.in-addr.arpa." "28800" "IN" "PTR" "EE-Tll-Lab-r1-ge-0-0-3-0.example.net."
+17:35:51 EET 29-12-2022 - DEBUG - Received existing record: "33.0.16.172.in-addr.arpa." "28800" "IN" "PTR" "cpe-a.example.net."
+17:35:51 EET 29-12-2022 - DEBUG - Received existing record: "64.0.16.172.in-addr.arpa." "28800" "IN" "PTR" "FI-Hel-DC1-r7-gi3.example.net."
+17:35:51 EET 29-12-2022 - DEBUG - Received existing record: "65.0.16.172.in-addr.arpa." "28800" "IN" "PTR" "cpe-b.example.net."
+17:35:51 EET 29-12-2022 - DEBUG - AXFR query of the 5.5.10.in-addr.arpa. zone from DNS server 10.5.5.159 succeeded
+17:35:51 EET 29-12-2022 - DEBUG - Received existing record: "57.5.5.10.in-addr.arpa." "28800" "IN" "PTR" "EE-Tll-Lab-r2-gi1.example.net."
+17:35:51 EET 29-12-2022 - DEBUG - Received existing record: "58.5.5.10.in-addr.arpa." "28800" "IN" "PTR" "EE-Tll-Lab-r1-fxp0-0.example.net."
+17:35:51 EET 29-12-2022 - DEBUG - Received existing record: "60.5.5.10.in-addr.arpa." "28800" "IN" "PTR" "FI-Hel-DC1-r7-gi1.example.net."
+17:35:51 EET 29-12-2022 - DEBUG - AXFR query of the 2.16.172.in-addr.arpa. zone from DNS server 10.5.5.159 succeeded
+17:35:51 EET 29-12-2022 - DEBUG - Received existing record: "1.2.16.172.in-addr.arpa." "28800" "IN" "PTR" "EE-Tll-Lab-r1-ge-0-0-6-0.example.net."
+17:35:51 EET 29-12-2022 - DEBUG - Received existing record: "10.2.16.172.in-addr.arpa." "28800" "IN" "PTR" "EE-Tll-Lab-r2-gi5.example.net."
+17:35:51 EET 29-12-2022 - DEBUG - Received existing record: "133.2.16.172.in-addr.arpa." "28800" "IN" "PTR" "vrrp.inet.FI-Hel-DC1-r7-gi6.example.net."
+17:35:51 EET 29-12-2022 - DEBUG - Received existing record: "134.2.16.172.in-addr.arpa." "28800" "IN" "PTR" "vrrp.inet.FI-Hel-DC1-r7-gi6.example.net."
+17:35:51 EET 29-12-2022 - DEBUG - Received existing record: "9.2.16.172.in-addr.arpa." "28800" "IN" "PTR" "FI-Hel-DC1-r7-gi5.example.net."
+17:35:51 EET 29-12-2022 - DEBUG - AXFR query of the 51.168.192.in-addr.arpa. zone from DNS server 10.5.5.159 succeeded
+17:35:51 EET 29-12-2022 - DEBUG - Received existing record: "252.51.168.192.in-addr.arpa." "28800" "IN" "PTR" "EE-Tll-Lab-r1-ge-0-0-7-122.example.net."
+17:35:51 EET 29-12-2022 - DEBUG - Received existing record: "253.51.168.192.in-addr.arpa." "28800" "IN" "PTR" "EE-Tll-Lab-r2-gi7-122.example.net."
+17:35:51 EET 29-12-2022 - DEBUG - Received existing record: "254.51.168.192.in-addr.arpa." "28800" "IN" "PTR" "vrrp.inet.EE-Tll-Lab-r2-gi7-122.example.net."
+17:35:51 EET 29-12-2022 - DEBUG - AXFR query of the 3.6.0.0.0.9.7.c.c.e.d.3.5.d.d.f.ip6.arpa. zone from DNS server 10.5.5.159 succeeded
+17:35:51 EET 29-12-2022 - DEBUG - Received existing record: "1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.3.6.0.0.0.9.7.c.c.e.d.3.5.d.d.f.ip6.arpa." "28800" "IN" "PTR" "vrrp.inet6.EE-Tll-Lab-r1-ge-0-0-7-122.example.net."
+17:35:51 EET 29-12-2022 - DEBUG - Received existing record: "2.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.3.6.0.0.0.9.7.c.c.e.d.3.5.d.d.f.ip6.arpa." "28800" "IN" "PTR" "EE-Tll-Lab-r1-ge-0-0-7-122.example.net."
+17:35:51 EET 29-12-2022 - DEBUG - Received existing record: "3.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.3.6.0.0.0.9.7.c.c.e.d.3.5.d.d.f.ip6.arpa." "28800" "IN" "PTR" "EE-Tll-Lab-r2-gi7-122.example.net."
+17:35:51 EET 29-12-2022 - DEBUG - AXFR query of the 114.168.192.in-addr.arpa. zone from DNS server 10.5.5.159 succeeded
+17:35:51 EET 29-12-2022 - DEBUG - Received existing record: "221.114.168.192.in-addr.arpa." "28800" "IN" "PTR" "EE-Tll-Lab-r1-ge-0-0-7-123.example.net."
+17:35:51 EET 29-12-2022 - DEBUG - Received existing record: "222.114.168.192.in-addr.arpa." "28800" "IN" "PTR" "as65001.inet.EE-Tll-Lab-r1-ge-0-0-7-123.example.net."
+17:35:51 EET 29-12-2022 - DEBUG - Received existing record: "241.114.168.192.in-addr.arpa." "28800" "IN" "PTR" "EE-Tll-Lab-r2-gi7-123.example.net."
+17:35:51 EET 29-12-2022 - DEBUG - Received existing record: "242.114.168.192.in-addr.arpa." "28800" "IN" "PTR" "as4294967294.inet.EE-Tll-Lab-r2-gi7-123.example.net."
+17:35:51 EET 29-12-2022 - DEBUG - AXFR query of the 8.8.0.0.0.9.7.c.c.e.d.3.5.d.d.f.ip6.arpa. zone from DNS server 10.5.5.159 succeeded
+17:35:51 EET 29-12-2022 - DEBUG - Received existing record: "1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.8.8.0.0.0.9.7.c.c.e.d.3.5.d.d.f.ip6.arpa." "28800" "IN" "PTR" "EE-Tll-Lab-r1-ge-0-0-7-123.example.net."
+17:35:51 EET 29-12-2022 - DEBUG - Received existing record: "9.e.d.f.0.0.0.0.0.0.0.0.0.0.0.0.8.8.0.0.0.9.7.c.c.e.d.3.5.d.d.f.ip6.arpa." "28800" "IN" "PTR" "as65001.inet6.EE-Tll-Lab-r1-ge-0-0-7-123.example.net."
+17:35:51 EET 29-12-2022 - DEBUG - AXFR query of the 115.168.192.in-addr.arpa. zone from DNS server 10.5.5.159 succeeded
+17:35:51 EET 29-12-2022 - DEBUG - Received existing record: "0.115.168.192.in-addr.arpa." "28800" "IN" "PTR" "EE-Tll-Lab-r1-ge-0-0-7-124.example.net."
+17:35:51 EET 29-12-2022 - DEBUG - Received existing record: "1.115.168.192.in-addr.arpa." "28800" "IN" "PTR" "EE-Tll-Lab-r2-gi7-124.example.net."
+17:35:51 EET 29-12-2022 - DEBUG - AXFR query of the 0.0.1.0.0.9.7.c.c.e.d.3.5.d.d.f.ip6.arpa. zone from DNS server 10.5.5.159 succeeded
+17:35:51 EET 29-12-2022 - DEBUG - Received existing record: "0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.1.0.0.9.7.c.c.e.d.3.5.d.d.f.ip6.arpa." "28800" "IN" "PTR" "EE-Tll-Lab-r1-ge-0-0-7-124.example.net."
+17:35:51 EET 29-12-2022 - DEBUG - Received existing record: "1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.1.0.0.9.7.c.c.e.d.3.5.d.d.f.ip6.arpa." "28800" "IN" "PTR" "EE-Tll-Lab-r2-gi7-124.example.net."
+17:35:51 EET 29-12-2022 - DEBUG - AXFR query of the 9.9.0.0.0.9.7.c.c.e.d.3.5.d.d.f.ip6.arpa. zone from DNS server 10.5.5.159 succeeded
+17:35:51 EET 29-12-2022 - DEBUG - Received existing record: "2.1.1.0.0.0.0.0.0.0.0.0.0.0.0.0.9.9.0.0.0.9.7.c.c.e.d.3.5.d.d.f.ip6.arpa." "28800" "IN" "PTR" "EE-Tll-Lab-r2-gi7-123.example.net."
+17:35:51 EET 29-12-2022 - DEBUG - Received existing record: "3.1.1.0.0.0.0.0.0.0.0.0.0.0.0.0.9.9.0.0.0.9.7.c.c.e.d.3.5.d.d.f.ip6.arpa." "28800" "IN" "PTR" "as65005.inet6.EE-Tll-Lab-r2-gi7-123.example.net."
+17:35:51 EET 29-12-2022 - INFO - Find the DNS records which should be removed
+17:35:51 EET 29-12-2022 - DEBUG - Delete A record EE-Tll-Lab-r1-ge-0-0-6-0.example.net.(172.16.2.1) from DNS zone example.net.
+17:35:51 EET 29-12-2022 - DEBUG - Delete PTR record 1.2.16.172.in-addr.arpa. pointing to EE-Tll-Lab-r1-ge-0-0-6-0.example.net.
+17:35:51 EET 29-12-2022 - INFO - Find the DNS records which should be added
+17:35:51 EET 29-12-2022 - DEBUG - Add PTR record 4.4.8.0.0.0.0.0.0.0.0.0.0.0.0.0.9.9.0.0.0.9.7.c.c.e.d.3.5.d.d.f.ip6.arpa. pointing to test.core.example.net.
+17:35:51 EET 29-12-2022 - DEBUG - Add AAAA record test.core.example.net.(fdd5:3dec:c790:99::844) to DNS zone example.net.
+17:35:51 EET 29-12-2022 - INFO - Processing updates for zone example.net.
+17:35:51 EET 29-12-2022 - INFO - Attempt DDNS update to 10.5.5.159 TCP port 53
+17:35:51 EET 29-12-2022 - INFO - DDNS update to 10.5.5.159 succeeded
+17:35:51 EET 29-12-2022 - INFO - Processing updates for zone 2.16.172.in-addr.arpa.
+17:35:51 EET 29-12-2022 - INFO - Attempt DDNS update to 10.5.5.159 TCP port 53
+17:35:51 EET 29-12-2022 - INFO - DDNS update to 10.5.5.159 succeeded
+17:35:51 EET 29-12-2022 - INFO - Processing updates for zone 9.9.0.0.0.9.7.c.c.e.d.3.5.d.d.f.ip6.arpa.
+17:35:51 EET 29-12-2022 - INFO - Attempt DDNS update to 10.5.5.159 TCP port 53
+17:35:51 EET 29-12-2022 - INFO - DDNS update to 10.5.5.159 succeeded
