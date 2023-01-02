@@ -19,6 +19,8 @@ Generates DNS forward and reverse records for Juniper and Cisco routers interfac
 * Commit forward and reverse records into git for debugging purposes
 * Add or remove records in DNS using DDNS
 
+Connections to network devices are executed concurrently. SNMP is used for gathering the data from the Cisco routers in order to support the older hardware.
+
 
 ### Installation example
 
@@ -43,7 +45,7 @@ usr@nms-svr:~/dns-autogen$ source bin/activate
 (dns-autogen) usr@nms-svr:~/dns-autogen$ 
 (dns-autogen) usr@nms-svr:~/dns-autogen$ pip install requests dnspython gitpython lxml junos-eznc easysnmp -q
 (dns-autogen) usr@nms-svr:~/dns-autogen$ 
-(dns-autogen) usr@nms-svr:~/dns-autogen$ git clone git@github.com:tonusoo/routers-DNS-autogen.git -q
+(dns-autogen) usr@nms-svr:~/dns-autogen$ git clone https://github.com/tonusoo/routers-DNS-autogen.git -q
 (dns-autogen) usr@nms-svr:~/dns-autogen$ routers-DNS-autogen/routers_dns_autogen.py DEBUG
 ```
 
@@ -118,9 +120,9 @@ martint@EE-Tll-Lab-r1>
 <name>    <CNAME>        <optional router IPv4 addr>           <optional DNS TTL for this record>
 ```
 
-The first two entries are pretty self-explanatory: add the entry if the `<IPv4 addr>` or `<IPv6 addr>` was not automatically discovered from the routers or if the DNS autogen script did discover the `<IPv4 addr>` or `<IPv6 addr>` from the routers, then this discovery is ignored and the entry in the overrides file is used instead. Both `A` or `AAAA` and `PTR` records are made.
+The first two entries are pretty self-explanatory: add the entry if the IPv4 or IPv6 address was not automatically discovered from the routers or if the DNS autogen script did discover the IPv4 or IPv6 address from the routers, then this discovery is ignored and the entry in the overrides file is used instead. Both `A` or `AAAA` and `PTR` records are made.
 
-The third entry type allows one to make `CNAME` records. This entry has an `<optional router IPv4 addr>` field which instructs the script to establish the NETCONF or SNMP session to this specific IPv4 address if the `<name>` field matches with the router name in the [Juniper routers](https://github.com/tonusoo/routers-DNS-autogen/blob/main/docs/junipers) or [Cisco routers](https://github.com/tonusoo/routers-DNS-autogen/blob/main/docs/ciscos) files. This functionality is needed to initiate DNS autogen for new routers.
+The third entry type allows one to make `CNAME` records. This entry has an `<optional router IPv4 addr>` field which instructs the script to establish the NETCONF or SNMP session to this specific IPv4 address if the `<name>` field matches with the router name in the [Juniper routers](https://github.com/tonusoo/routers-DNS-autogen/blob/main/docs/junipers) or [Cisco routers](https://github.com/tonusoo/routers-DNS-autogen/blob/main/docs/ciscos) files. This functionality is needed to initiate DNS autogen for new routers. Pointer record and `A` or `AAAA` record for the canonical name(e.g `EE-Tll-Lab-r1-fxp0-0`) is made by the script automatically.
 
 
 ## License
